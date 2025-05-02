@@ -30,7 +30,6 @@ public class CategoryServiceTests {
 
     @BeforeEach
     void setUp() throws Exception {
-
         category = CategoryFactory.createCategory();
 
         list = new ArrayList<>();
@@ -41,7 +40,6 @@ public class CategoryServiceTests {
 
     @Test
     public void findAllShouldReturnListCategoryDTO(){
-
         List<CategoryDTO> result = service.findAll();
 
         Assertions.assertEquals(1, result.size());
